@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    </div>
+    <div id="main">
+        <!-- for a logo and to add search bar to take input and searchbutton -->
+        <div class="title">
+            <img src="https://www.sheknows.com/wp-content/uploads/2020/12/2021-food-trends.jpg" alt="" height="80px" id="logo" >
+            <h1>Feel the taste 😋</h1>
+        </div>
+        <p id="ad">Dive into a Sea of Fresh Flavors! Our seafood is caught daily for<br>an ocean-fresh experience🦞.</p>
+           <input type="text" id="takeInput" >
+           <button id="searchButton">search</button>
+        </div>
+    </div> 
+    <p class="dishofDay">
+        🌟 Most ordered dish of the day 🌟
+    </p>
+    <!-- to have a modal when i click on the image  -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div id="modalContent"></div>
+        </div>
+      </div>
+<!-- for the random dish -->
+    <div id="randomitem">
+<div id="showing">
+</div>
+    </div>
+     <!--if the input is not valid  -->
+    <p id="notShow"></p>
+    <!-- to show the searched category dishes -->
+    <div id="menuCategory">
+
+    </div>
+    <script src="./vanilla.js"></script>
+</body>
+</html>

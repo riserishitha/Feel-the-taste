@@ -1,0 +1,224 @@
+/* styling for the html code and also for the html code given in javascript */
+
+*{
+    font-family: 'Kaushan Script', cursive;
+}
+button{
+    border-radius: 10px;
+    height: 25px;
+    cursor: pointer;
+}
+#logo{
+    border: 1px solid white;
+    border-radius: 500px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.close{
+    font-size: 50px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+#main{
+    background: url("https://img.freepik.com/premium-photo/pattern-different-dishes-including-food_900958-7373.jpg");
+    height: 100%;
+    padding: 20px;
+    z-index: -1;
+}
+.title{
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 900;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 400px;
+}
+#takeInput{
+    margin-left: 35%;
+    height: 40px;
+    width: 350px;
+    border:2px solid rgb(68, 12, 12);
+    border-top-right-radius:20px ;
+    border-bottom-left-radius: 20px;
+}
+input[type='text'] {
+    padding: 5px;
+    font-size: 20px;
+    color: black;
+}
+#randomitem{
+    border:1px solid black ;
+    color: black;
+    border-radius: 10px;
+    background: url("https://www.shutterstock.com/image-vector/various-food-seamless-pattern-hand-600nw-1229845990.jpg");
+    margin-top: 10px;
+    height: 200px;
+    width: 400px;
+    padding: 10px;
+    margin-left: 35%;
+}
+#showing{
+    text-align: center;
+    font-size: larger;
+    column-gap: 20px;
+}
+#dishImage img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#ad{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: light;
+    text-align: center;
+}
+#modalContent{
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+margin-left: 15%;
+width: 1000px;
+background-color: white;
+}
+#modalContent div{
+    display: flex;
+    column-gap: 20px;
+}
+#modalContent h2{
+    text-align: center;
+    color: crimson;
+}
+#myModal{
+color: black;
+}
+#menuCategory img{
+    height: 180px;
+    width: 180px;
+    border: 2px solid rgba(0, 0, 0, 0.356);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+#menuCategory:hover img{
+    transform: scale(1.1);
+}
+#menuCategory{
+    margin-top: 15px;
+    display: grid;
+    padding: 10px;
+    font-size: larger;
+    font-weight: 800;
+    grid-template-columns: repeat(4,1fr);
+    border-radius: 10px;
+}
+.dishofDay{
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+}
+#notShow p{
+    font-size: x-large;
+    font-weight: 500;
+    text-align: center;
+    border: 2px solid rgb(64, 18, 138);
+    background-color: rgb(253, 168, 108);
+    border-radius: 10px;
+}
+
+/* Adding media querey's to make the website responsive in modiles*/
+
+@media only screen and (min-width: 310px) and (max-width: 600px){
+    *{
+        padding: 0px;
+    }
+    #main{
+        width: 20%;
+        padding: 1px;
+    }
+    #logo{
+        height: 3px;
+    }
+    #takeInput{
+        margin-left: 0px;
+        width: 40px;
+        height: 2px;
+    }
+    .title{
+        font-size: 5%;
+        text-align: start;
+        gap: 1px;
+    }
+    #randomitem{
+        padding: 3px;
+        height:50px;
+        width:60px;
+        margin-left: 0px;
+    }
+    #ad{
+        font-size: 5%;
+        text-align: start;
+    }
+    #showing{
+        text-align: start;
+        font-size: 10px;
+    }
+    #dishImage img{
+        width: 30%;
+        height: 30%;
+        padding: 0px;
+    }
+    .dishofDay{
+        font-size: 3px;
+        text-align: start;
+    }
+    #menuCategory img{
+        height: 50%;
+        width: 50%;
+    }
+    #menuCategory{
+        font-size: 20%;
+        display: block;
+        height: 45%;
+        width: 45%;
+    }
+    .instruction{
+        font-size: 15px;
+    }
+    #modalContent{
+        width: 20%;
+        padding: 2px;
+        text-align: start;
+        margin-left: 0px;
+        display: block;
+    }
+    #modalContent div{
+        display: block;
+        font-size: 30%;
+        column-gap: 0px;
+    }
+    #modalContent h2{
+        font-size: 2%;
+    }
+    .close{
+        font-size: 10px;
+        margin-left: 0px;
+    }
+    #dishImage p{
+        font-size: 50%;
+    }
+    #searchButton{
+        width: 25px;
+        height: 10px;
+        font-size: 4px;
+    }
+    input[type='text']{
+        font-size: 5px;
+    }
+    #notShow p{
+        font-size: 25%;
+        text-align: start;
+        width: 18%;
+    }
+}
