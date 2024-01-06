@@ -165,9 +165,10 @@ color: black;
         font-size: 10px;
     }
     #dishImage img{
-        width: 30%;
-        height: 30%;
+        width: 45%;
+        height: 45%;
         padding: 0px;
+        margin-left: 15px;
     }
     .dishofDay{
         font-size: 3px;
@@ -220,5 +221,8 @@ color: black;
         font-size: 25%;
         text-align: start;
         width: 18%;
+    }
+    #menuCategory img{
+        width: 40px;
     }
 }
